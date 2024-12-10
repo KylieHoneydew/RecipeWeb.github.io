@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&family=Ribeye+Marrow&display=swap');
+
+/* font-family: 'Ribeye'
+font-family: 'Ribeye Marrow' 
+*/
+
+.ingredients {
+        background: #357820;
+        padding: 10px;
+    }
+    .ingredients h2 {
+        color:#fff;
+    }
+    .ingredients ul li {
+        color: #fff;
+    }
+    .ingredients p {
+        color:#fff; }
+
+
+
+    /* List of ingredient calories */
+.nutrition ul {
+            list-style-type: none;
+            display: flex;
+            justify-content:space-between;
+            padding: 0;
+            margin: 0;
+           }
+           .nutrition ul li {
+            border: 1px solid #000;
+            margin:5px;
+            display:inline-block;
+        }
+        .nutrition ul span {
+            display: block;
+            padding: 1rem;
+            border-top: 1px solid #589;
+            text-align: center;
+        }
+        .nutrition 
+ul li span:nth-of-type(1) {
+            background: #ddd;
+        }
+    
+
+
+    /* main grid work */
+
+.recipemain {
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "ingredients directions"
+        "ingredients image"
+        "ingredients nutrition";
+         gap: 10px;}
+    
+    .ingredients {
+        grid-area: ingredients; 
+    }
+    .directions{
+        grid-area: directions; 
+    }
+    .image {
+        grid-area: image;
+    }
+    .nutrition {
+        grid-area: nutrition;
+    }
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ingredients p {
+    font-family: sans-serif;
+}
+
+ul li {
+    font-family: sans-serif;
+}
+
+section ol li {
+    font-family: sans-serif;
+}
+
+
+
+
+    
+    
+        
+    
